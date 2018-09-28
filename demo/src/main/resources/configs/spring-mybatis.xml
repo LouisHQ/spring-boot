@@ -56,15 +56,15 @@
         <!-- 自动扫描mapper.xml文件，支持通配符 -->
         <property name="mapperLocations">
             <array>
-                <value>classpath:com/gitee/sunchenbin/mybatis/actable/mapping/*/*.xml</value>
+                <value>classpath:com/mybatis/plus/actable/mapping/*/*.xml</value>
                 <value>classpath*:sqlmap/**/*.xml</value>
             </array>
         </property>
         <!-- 配置文件，比如参数配置(是否启动驼峰等)、插件配置等 -->
         <property name="configLocation" value="classpath:configs/mybatis-config.xml"/>
         <!-- 启用别名，这样就无需写全路径类名了，具体可自行查阅资料 -->
-        <property name="typeAliasesPackage" value="com.example.springdemo.entity"/>
-        <property name="typeEnumsPackage" value="com.example.springdemo.entity.enums"/>
+        <property name="typeAliasesPackage" value="com.example.model.entity"/>
+        <property name="typeEnumsPackage" value="com.example.model.entity.enums"/>
         <!-- MP 全局配置注入 -->
         <property name="globalConfig" ref="globalConfig"/>
         <!-- 设置vfs实现，避免路径扫描问题 -->
@@ -90,7 +90,7 @@
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 配置mybatis 扫描mapper接口的路径, 相当于注解@MapperScan，@MapperScan("com.example.springdemo.mapper")-->
-        <property name="basePackage" value="com.gitee.sunchenbin.mybatis.actable.dao.*; com.example.springdemo.mapper"/>
+        <property name="basePackage" value="com.mybatis.plus.actable.dao.*; com.example.springdemo.mapper"/>
     </bean>
 
     <bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">

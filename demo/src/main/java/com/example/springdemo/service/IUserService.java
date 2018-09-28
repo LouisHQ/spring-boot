@@ -2,8 +2,7 @@ package com.example.springdemo.service;
 
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.example.springdemo.entity.User;
-import org.springframework.stereotype.Service;
+import com.example.model.entity.User;
 
 import java.util.List;
 

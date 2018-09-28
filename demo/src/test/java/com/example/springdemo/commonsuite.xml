@@ -28,7 +28,7 @@
     <!--</groups>-->
     <classes>
       <!-- 可以多个 -->
-      <class name="com.example.springdemo.HelloControllerTest"/>
+      <class name="com.example.springdemo.controller.HelloControllerTest"/>
     </classes>
   </test> <!-- spring-demo -->
 </suite> <!-- Default Suite -->

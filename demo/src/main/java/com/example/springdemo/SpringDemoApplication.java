@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan(basePackages = {
         "com.example.springdemo",
-        "com.gitee.sunchenbin.mybatis.actable.manager.*"
+        "com.mybatis.plus.actable.manager.*"
 })
 public class SpringDemoApplication extends SpringBootServletInitializer {
     @Override

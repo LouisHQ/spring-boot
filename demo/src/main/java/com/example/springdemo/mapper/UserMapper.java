@@ -7,7 +7,7 @@ package com.example.springdemo.mapper;
  */
 
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import com.example.springdemo.entity.User;
+import com.example.model.entity.User;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
@@ -23,7 +23,7 @@ public interface UserMapper extends SuperMapper<User> {
      */
     int deleteAll();
 
-    @Select("SELECT test_id AS id, tenant_id as tenantId, name, age, test_type, test_date, role, phone  FROM demo_user")
+    @Select("SELECT test_id AS id, name, age, test_type, test_date, role, phone  FROM demo_user")
     List<User> selectListBySQL();
 
     List<User> selectListByWrapper(@Param("ew") Wrapper wrapper);

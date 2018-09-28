@@ -10,7 +10,7 @@
         DELETE FROM DEMO_USER
     </delete>
 
-    <select id="selectListByWrapper" resultType="com.example.springdemo.entity.User">
+    <select id="selectListByWrapper" resultType="com.example.model.entity.User">
         SELECT * FROM DEMO_USER
         <!-- 判断 wrapper 是否为空 emptyOfWhere -->
         <where>
