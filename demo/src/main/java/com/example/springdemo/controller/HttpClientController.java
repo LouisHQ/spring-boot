@@ -20,7 +20,7 @@ import java.net.URLEncoder;
  */
 @RestController
 public class HttpClientController {
-    @Autowired
+//    @Autowired
     private RestTemplate restTemplate;
 
     /**

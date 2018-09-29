@@ -30,7 +30,7 @@ import java.util.List;
  * @Description:
  */
 
-@Configuration
+//@Configuration
 @ConfigurationProperties(prefix = "spring.restTemplate")
 @ConditionalOnClass(value = {RestTemplate.class, CloseableHttpClient.class})
 public class RestTemplateConfig {
